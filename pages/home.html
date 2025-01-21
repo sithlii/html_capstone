@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: Home</title>
+    <style>
+        body, html {
+            margin-left:10%;
+            margin-right:10%;
+            margin-bottom:5%;
+            margin-top:2%;
+            width:80%;
+            height:98%;
+        }
+        .banner {
+            background-color: black;
+            background-image:url(../assets/flight-path-on-transparent-d.png);
+            height: 50vh;
+            width: 100vw;
+            background-size: 50%;
+            background-position: bottom;
+            background-repeat: no-repeat;
+            position: absolute;
+            top:0;
+            left:0;
+            z-index:-1;
+            
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+        .content {
+            margin-left:15%;
+            margin-right:15%;
+            margin-bottom:5%;
+            margin-top:5%;
+        }
+        .header {
+            font-size: 60px;
+        }
+        .text {
+            font-size: 25px;
+            margin-top:250px;
+        }
+        .top {
+            margin-top:400px;
+        }
+        .heading {
+            margin-top: 0;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .right-container {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-field {
+            overflow: hidden;
+        }
+        .dropbtn {
+            background-color: #f9f9f9;
+            border: #f9f9f9;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+        }
+        .nav-field:hover .dropdown-content {
+            display: block;
+        }
+        .flex-container a {
+            text-decoration: none;
+        }
+        .right-container:hover a {
+            text-decoration: underline;
+        }
+    </style>
+    <div class="text heading">
+        <div class="flex-container">
+            <p><em><a href="./home.html" style="color: white;">Twenty Twenty-Two</a></em></p>
+            <div class="right-container">
+                <a href="./about.html" style="color: white;">About</a>
+                <div class="nav-field">    
+                    <a href="./parent.html" style="color: white;">Parent Page</a>
+                    <button class="dropbtn" style="background-color: black;"><image src="../assets/down-white.png" height="10px"></image></button>
+                    <div class="dropdown-content">
+                        <a href="./sub-page.html">Sub-page</a>
+                        <a href="./elements.html">Elements</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="banner"></div>
+</head>
+<body>
+    <div class="text top">
+        <div class="header">
+            <p>Worth A Thousand Words</p>
+        </div>
+        <p>Boat.</p><p><em><u>October 17, 2008</u></em></p>
+    </div>
+    <div class="text">
+        <div class="header">
+            <a href="./elements.html" style="color: black; text-decoration: none;">Elements</a>
+        </div>
+        <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site. Heading 1 Heading 2 Heading 3 Heading 4 Heading 5 Heading 6 [top] Paragraph...</p><p><em><u>September 5, 2008</u></em></p>
+    </div>
+    <div class="text">
+        <div class="header">
+            <p>More Tags</p>
+        </div>
+        <p>More of these posts need tags.</p><p><em><u>June 21, 2008</u></em></p>
+    </div>
+    <div class="text">
+        <div class="header">
+            <p>HTML</p>
+        </div>
+        <p>What HTML tags would you like to see? Let's start with an unordered list: One Two Three Four And then move on to a more interesting ordered list: one, two buckle my shoe three, four knock at the door Five, six pick up sticks Seven, eight, lay them straight Nine, ten, a big fat hen...</p><p><em><u>June 21, 2008</u></em></p>
+    </div>
+    <div class="text">
+        <div class="header">
+            <p>Links</p>
+        </div>
+        <p>A few well known WordPress links: Wordpress.org, the Codex and the download page.</p><p><em><u>June 20, 2008</u></em></p>
+    </div>
+    <div class="text">
+        <div class="header">
+            <p>Category Hierarchy</p>
+        </div>
+        <p>This post has 4 categories, part of ta hierarchy that is 3 deep. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Fusce euismod commodo ante. Suspendisse potenti. Nunc pellentesque quam vel pede. Ut a lorem non urna molestie eusimod. Fusce consequat tortor eu urna. Pellentesque aliquam, pede eget tincidunt feugiat, nunc massa hendrerit magna, non...</p><p><em><u>June 20, 2008</u></em></p>
+    </div>
+    <div class="text">
+        <div class="header">
+            <p>Hello World!</p>
+        </div>
+        <p>Welcome to WordPress. This is your first post. Edit or delete it, then start blogging!</p><p><em><u>June 4, 2008</u></em></p>
+    </div>
+    <br><br><br><br><br><br>
+</body>
+<footer>
+    <table style="width: 200%;">
+        <tr>
+            <td><em>Twenty Twenty-Two</em></td>
+            <td>Proudly Powered by <u>WordPress</u></td>
+        </tr>
+    </table><br><br>
+</footer>
+</html>

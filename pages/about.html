@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: About</title>
+    <style>
+        body, html {
+            margin-left:10%;
+            margin-right:10%;
+            margin-bottom:5%;
+            margin-top:2%;
+            width:80%;
+            height:98%;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+        .content {
+            margin-left:15%;
+            margin-right:15%;
+            margin-bottom:5%;
+            margin-top:5%;
+        }
+        .header {
+            font-size: 60px;
+        }
+        .text {
+            font-size: 25px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .right-container {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-field {
+            overflow: hidden;
+        }
+        .dropbtn {
+            background-color: #f9f9f9;
+            border: #f9f9f9;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+        }
+        .nav-field:hover .dropdown-content {
+            display: block;
+        }
+        .flex-container a {
+            text-decoration: none;
+            color: black;
+        }
+        .right-container:hover a {
+            text-decoration: underline;
+        } 
+    </style>
+    <div class="text">
+        <div class="flex-container">
+            <p><em><a href="./home.html">Twenty Twenty-Two</a></em></p>
+            <div class="right-container">
+                <a href="./about.html">About</a>
+                <div class="nav-field">    
+                    <a href="./parent.html">Parent Page</a>
+                    <button class="dropbtn"><image src="../assets/drop-down-arrow.png" height="10px"></image></button>
+                    <div class="dropdown-content">
+                        <a href="./sub-page.html">Sub-page</a>
+                        <a href="./elements.html">Elements</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
+<body>
+    <br><br><div class="header">
+        <p>About</p>
+    </div>
+    <br><br><br><hr style="height:2px;border:none;background-color: black;"><br><br><br>
+    <div class="content">
+        <div class="text">
+            <p>This site is using the standard WordPress Theme Unit Test Data for content. The Theme Unit Test is 
+                a series of posts and pages that match up with a checklist on the WordPress codex. You can use the data 
+                and checklist together to test your theme. It is recommended that you test your theme with the Theme 
+                Unit Test before submitting your theme to the WordPress.org theme directory.
+            </p>
+            <div class="header">
+                <p>WordPress Theme<br>Development Resources</p>
+            </div>
+            <ol>
+                <li>See <a href="./home.html">the WordPress Theme Developer Handbook</a> for examples of best practices.</li>
+                <li>See <a href="./home.html">the WordPress Code Reference</a> for more information about WordPress' functions, classes, methods, and hooks.</li>
+                <li>See <a href="./home.hmtl">Theme Unit Test</a> for a robust test suite for your Theme and get the latest version fo the test data you see here.</li>
+                <li>See <a href="./home.html">Releasing Your Theme</a> for a guide to submitting your Theme to the <a href="./elements.html">Theme Directory</a>.</li>
+            </ol>
+            <div class="header">
+                <p>Leave a Reply</p>
+            </div>
+            <p>You must be <a href="./home.html">logged in</a> to post a comment.</p><br><br><br>
+        </div>
+    </div>
+</body>
+<footer>
+    <table style="width: 200%;">
+        <tr>
+            <td><em>Twenty Twenty-Two</em></td>
+            <td>Proudly Powered by <u>WordPress</u></td>
+        </tr>
+    </table><br><br>
+</footer>
+</html>

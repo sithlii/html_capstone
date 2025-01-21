@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML: Elements</title>
+    <style>
+        body, html {
+            margin-left:10%;
+            margin-right:10%;
+            margin-bottom:5%;
+            margin-top:2%;
+            width:80%;
+            height:98%;
+        }
+        h1,h2,h3,h4,h5,h6 {
+            font-weight: normal;
+        }
+        .content {
+            margin-left:15%;
+            margin-right:15%;
+            margin-bottom:5%;
+            margin-top:5%;
+        }
+        .header {
+            font-size: 60px;
+        }
+        .text {
+            font-size: 25px;
+        }
+        .flex-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .right-container {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-field {
+            overflow: hidden;
+        }
+        .dropbtn {
+            background-color: #f9f9f9;
+            border: #f9f9f9;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            float: none;
+            color: black;
+            padding: 12px 16px;
+            display: block;
+            text-align: left;
+        }
+        .nav-field:hover .dropdown-content {
+            display: block;
+        }
+        .flex-container a {
+            text-decoration: none;
+            color: black;
+        }
+        .right-container:hover a {
+            text-decoration: underline;
+        }  
+    </style>
+    <div class="text">
+        <div class="flex-container">
+            <p><em><a href="./home.html">Twenty Twenty-Two</a></em></p>
+            <div class="right-container">
+                <a href="./about.html">About</a>
+                <div class="nav-field">    
+                    <a href="./parent.html">Parent Page</a>
+                    <button class="dropbtn"><image src="../assets/drop-down-arrow.png" height="10px"></image></button>
+                    <div class="dropdown-content">
+                        <a href="./sub-page.html">Sub-page</a>
+                        <a href="./elements.html">Elements</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</head>
+<body>
+    <br><br><div class="header">
+        <p><a id="top">Elements</a></p>
+    </div>
+    <br><br><br><hr style="height:2px;border:none;background-color: black;"><br><br><br>
+    <div class="content">
+        <div class="text">
+            <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
+        </div>
+        <hr>
+        <h1 style="font-size:100px;">Heading 1</h1><h2 style="font-size: 80px;">Heading 2</h2><h3 style="font-size: 60px;">Heading 3</h3>
+        <h4 style="font-size: 40px;">Heading 4</h4><h5 style="font-size: 30px;font-weight: bold;">Heading 5</h5><h6 style="font-size: 30px;">Heading 6</h6>
+        <p style="font-size:25px;"><a href="#top">[top]</a></p><hr>
+        <div class="header">
+            <p>Paragraph</p>
+            <div class="text">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero provident quam esse dicta hic iure voluptate beatae tempore voluptas quia, at quisquam? Repellat inventore odit quidem perferendis, similique in blanditiis!
+                Eveniet, repellendus! Ducimus a, rerum nisi voluptas totam veniam aliquid est alias explicabo quibusdam exercitationem possimus aperiam placeat similique reiciendis. Unde a esse in itaque perspiciatis consequatur quidem nam eligendi.
+                Explicabo at placeat accusantium reprehenderit quaerat praesentium harum. Porro, eligendi ea pariatur aut amet assumenda corporis maxime aperiam, voluptas dolorem illo asperiores ab nulla at reiciendis voluptates. Tempora, reiciendis quos.</p>
+                <p><em>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui reiciendis enim perferendis aspernatur laboriosam expedita quis eius veniam odio numquam dolore adipisci labore, nesciunt, dicta esse quia. Quod, tempora facere?
+                At placeat fugit autem eveniet, odio, esse sunt tempora, dolor distinctio dolorem dignissimos delectus. Adipisci, quaerat? Itaque maxime numquam harum voluptate ab, natus eaque praesentium sunt expedita porro? Consequuntur, vel.
+                Libero debitis ratione maxime inventore dolorum accusamus numquam alias autem odit iste voluptatum itaque exercitationem similique laboriosam reprehenderit quod facilis, consectetur earum ut incidunt. Quo magni nostrum labore omnis! Reiciendis.</em></p>
+                <a href="#top">[top]</a>
+            </div><hr>
+            <p style="font-size:70px;">List Types</p><p>Definition List</p>
+            <div class="text">
+                <dl>
+                    <dt>Defintion List Title</dt>
+                    <dd>This is a defintion list division.</dd>
+                </dl>
+            </div>
+            <p>Ordered List</p>
+            <div class="text">
+                <ol>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </ol>
+            </div>
+            <p>Unordered List</p>
+            <div class="text">
+                <ul>
+                    <li>List Item 1</li>
+                    <li>List Item 2</li>
+                    <li>List Item 3</li>
+                </ul><br>
+                <a href="#top">[top]</a>
+            </div><hr>
+            <p>Forms</p>
+            <div class="text">
+                <fieldset>
+                    <legend>Legend</legend>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
+                    <div class="header"><p>Form Element</p></div>
+                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
+                    <form action="https://httpbin.org/post" method="post">
+                        <div class="text-field">
+                            <label for="field-one">Text Field:</label><br>
+                            <input id="field-one" name="field-one">
+                        </div><br>
+                        <div class="textarea-field">
+                            <label for="field-two">Text Area:</label><br>
+                            <textarea name="textarea" id="field-two" rows="2"></textarea>
+                        </div><br>
+                        <div class="dropdown-field">
+                            <label for="dropdown">Select Element:</label><br>
+                            <select name="elements" id="elements">
+                                <optgroup label="Option Group 1">
+                                    <option value="option 1">Option 1</option>
+                                    <option value="option 2">Option 2</option>
+                                    <option value="option 3">Option 3</option>
+                                </optgroup>
+                                <optgroup label="Option Group 2">
+                                    <option value="option 1">Option 1</option>
+                                    <option value="option 2">Option 2</option>
+                                    <option value="option 3">Option 3</option>
+                                </optgroup>
+                            </select>
+                        </div><br>
+                        <p>Radio Buttons:</p>
+                        <div class="radio-field">
+                            <input name="radio-one" id="radio-one" type="radio" value="radioOne">
+                            <label for="radio-one">Radio 1</label><br>
+                            <input name="radio-two" id="radio-two" type="radio" value="radioTwo">
+                            <label for="radio-two">Radio 2</label><br>
+                            <input name="radio-three" id="radio-three" type="radio" value="radioThree">
+                            <label for="radio-three">Radio 3</label>
+                        </div>
+                        <p>Checkboxes:</p>
+                        <div class="check-field">
+                            <input name="check-one" id="check-one" type="checkbox" value="checkOne">
+                            <label for="check-one">Radio 1</label><br>
+                            <input name="check-two" id="check-two" type="checkbox" value="checkTwo">
+                            <label for="check-two">Radio 2</label><br>
+                            <input name="check-three" id="check-three" type="checkbox" value="checkThree">
+                            <label for="check-three">Radio 3</label>
+                        </div><br>
+                        <div class="password-field">
+                            <label for="password">Password:</label><br><br>
+                            <input id="password" name="password" type="password">
+                        </div><br>
+                        <div class="upload-field">
+                            <label for="file-upload">File Input:</label><br>
+                            <input id="file-upload" name="myfile" type="file">
+                        </div><br>
+                        <span class="reset-field">
+                            <input type="reset" value="Clear">
+                        </span>
+                        <span class="submit-field">
+                            <input type="submit" value="Submit">
+                        </span>
+                    </form>
+                </fieldset>
+                <br><a href="#top">[top]</a>
+            </div><hr>
+            <div class="header"><p>Tables</p></div>
+            <div class="text">
+                <table align="center">
+                    <thead>
+                        <tr>
+                            <th>Table Header 1</th>
+                            <th>Table Header 2</th>
+                            <th>Table Header 3</th>
+                        </tr>
+                    </thead>
+                    <tbody>    
+                        <tr>
+                            <td>Division 1</td>
+                            <td>Division 2</td>
+                            <td>Division 3</td>
+                        </tr>
+                        <tr>
+                            <td>Division 1</td>
+                            <td>Division 2</td>
+                            <td>Division 3</td>
+                        </tr>
+                        <tr>
+                            <td>Division 1</td>
+                            <td>Division 2</td>
+                            <td>Division 3</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <br><a href="#top">[top]</a>
+            </div><hr>
+            <div class="header"><p>Misc Stuff - abbr, acronym, pre, code, sub, sup, etc.</p></div>
+            <div class="text">
+                <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <em>cite</em>.
+                    Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+                    Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.
+                    Donec sed tellus eget sapien fringilla nonummy. <abbr title="National Basketball Association">NBA</abbr> Mauris a ante. Suspendisse quam sem, consequat
+                    at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. <abbr title="Avenue">AVE</abbr>
+                </p>
+                <p><code>
+                    Lorem superscript dolor subscript amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus.
+                    Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
+                    Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus. Maecenas ornare tortor.
+                    Donec sed tellus eget sapien fringilla nonummy. <abbr title="National Basketball Association">NBA</abbr> 
+                    Mauris a ante. Suspendisse quam sem, consequat at, commodo vitae, feugiat in, nunc. Morbi imperdiet augue quis tellus. 
+                    <abbr title="Avenue">AVE</abbr> 
+                </code></p>
+                <p>"This stylesheet is going to help so freaking much."<br>-Blockquote</p>
+                <a href="#top">[top]</a><br><br><br><br>
+                <table style="width: 100%;">
+                    <tr>
+                        <td><em>September 5, 2008</em></td>
+                        <td>Theme Admin</td>
+                        <td><u>Uncategorized</u></td>
+                    </tr>
+                </table>
+                <br><br><hr style="height:2px;border:none;background-color: black;"><br><br><br>
+            </div>
+        </div>
+    </div>
+
+</body>
+<footer>
+    <table style="width: 200%;">
+        <tr>
+            <td><em>Twenty Twenty-Two</em></td>
+            <td>Proudly Powered by <u>WordPress</u></td>
+        </tr>
+    </table><br><br>
+</footer>
+</html>
