@@ -70,9 +70,11 @@
             text-decoration: underline;
         }  
     </style>
+</head>
+<body>
     <div class="text">
         <div class="flex-container">
-            <p><em><a href="./home.html">Twenty Twenty-Two</a></em></p>
+            <p><em><a href="../index.html">Twenty Twenty-Two</a></em></p>
             <div class="right-container">
                 <a href="./about.html">About</a>
                 <div class="nav-field">    
@@ -86,21 +88,22 @@
             </div>
         </div>
     </div>
-    
-</head>
-<body>
     <br><br><div class="header">
-        <p><a id="top">Elements</a></p>
+        <a id="top">Elements</a>
     </div>
     <br><br><br><hr style="height:2px;border:none;background-color: black;"><br><br><br>
     <div class="content">
-        <div class="text">
-            <p>The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
-        </div>
+        <p class="text">The purpose of this HTML is to help determine what default settings are with CSS and to make sure that all possible HTML Elements are included in this HTML so as to not miss any possible Elements when designing a site.</p>
         <hr>
-        <h1 style="font-size:100px;">Heading 1</h1><h2 style="font-size: 80px;">Heading 2</h2><h3 style="font-size: 60px;">Heading 3</h3>
-        <h4 style="font-size: 40px;">Heading 4</h4><h5 style="font-size: 30px;font-weight: bold;">Heading 5</h5><h6 style="font-size: 30px;">Heading 6</h6>
-        <p style="font-size:25px;"><a href="#top">[top]</a></p><hr>
+        <div class="heading-wrapper">
+            <h1 style="font-size:100px;">Heading 1</h1>
+            <h2 style="font-size: 80px;">Heading 2</h2>
+            <h3 style="font-size: 60px;">Heading 3</h3>
+            <h4 style="font-size: 40px;">Heading 4</h4>
+            <h5 style="font-size: 30px;font-weight: bold;">Heading 5</h5>
+            <h6 style="font-size: 30px;">Heading 6</h6>
+        </div>
+        <a href="#top"style="font-size:25px;">[top]</a><hr>
         <div class="header">
             <p>Paragraph</p>
             <div class="text">
@@ -115,8 +118,8 @@
             <p style="font-size:70px;">List Types</p><p>Definition List</p>
             <div class="text">
                 <dl>
-                    <dt>Defintion List Title</dt>
-                    <dd>This is a defintion list division.</dd>
+                    <dt>Definition List Title</dt>
+                    <dd>This is a definition list division.</dd>
                 </dl>
             </div>
             <p>Ordered List</p>
@@ -141,7 +144,7 @@
                 <fieldset>
                     <legend>Legend</legend>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl. Praesent mattis, massa quis luctus fermentum, turpis mi volutpat justo, eu volutpat enim diam eget metus.</p>
-                    <div class="header"><p>Form Element</p></div>
+                    <p class="header">Form Element</p>
                     <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. Donec faucibus. Nunc iaculis suscipit dui.</p>
                     <form action="https://httpbin.org/post" method="post">
                         <div class="text-field">
@@ -153,7 +156,7 @@
                             <textarea name="textarea" id="field-two" rows="2"></textarea>
                         </div><br>
                         <div class="dropdown-field">
-                            <label for="dropdown">Select Element:</label><br>
+                            <p>Select Element:</p><br>
                             <select name="elements" id="elements">
                                 <optgroup label="Option Group 1">
                                     <option value="option 1">Option 1</option>
@@ -169,11 +172,11 @@
                         </div><br>
                         <p>Radio Buttons:</p>
                         <div class="radio-field">
-                            <input name="radio-one" id="radio-one" type="radio" value="radioOne">
+                            <input name="radio-group" id="radio-one" type="radio" value="radioOne">
                             <label for="radio-one">Radio 1</label><br>
-                            <input name="radio-two" id="radio-two" type="radio" value="radioTwo">
+                            <input name="radio-group" id="radio-two" type="radio" value="radioTwo">
                             <label for="radio-two">Radio 2</label><br>
-                            <input name="radio-three" id="radio-three" type="radio" value="radioThree">
+                            <input name="radio-group" id="radio-three" type="radio" value="radioThree">
                             <label for="radio-three">Radio 3</label>
                         </div>
                         <p>Checkboxes:</p>
@@ -193,17 +196,17 @@
                             <label for="file-upload">File Input:</label><br>
                             <input id="file-upload" name="myfile" type="file">
                         </div><br>
-                        <span class="reset-field">
+                        <div class="reset-field">
                             <input type="reset" value="Clear">
-                        </span>
-                        <span class="submit-field">
+                        </div>
+                        <div class="submit-field">
                             <input type="submit" value="Submit">
-                        </span>
+                        </div>
                     </form>
                 </fieldset>
                 <br><a href="#top">[top]</a>
             </div><hr>
-            <div class="header"><p>Tables</p></div>
+            <p class="header">Tables</p>
             <div class="text">
                 <table align="center">
                     <thead>
@@ -233,7 +236,7 @@
                 </table>
                 <br><a href="#top">[top]</a>
             </div><hr>
-            <div class="header"><p>Misc Stuff - abbr, acronym, pre, code, sub, sup, etc.</p></div>
+            <p class="header">Misc Stuff - abbr, acronym, pre, code, sub, sup, etc.</p>
             <div class="text">
                 <p>Lorem <sup>superscript</sup> dolor <sub>subscript</sub> amet, consectetuer adipiscing elit. Nullam dignissim convallis est. Quisque aliquam. <em>cite</em>.
                     Nunc iaculis suscipit dui. Nam sit amet sem. Aliquam libero nisi, imperdiet at, tincidunt nec, gravida vehicula, nisl.
@@ -262,14 +265,13 @@
             </div>
         </div>
     </div>
-
+    <footer>
+        <table style="width: 200%;">
+            <tr>
+                <td><em>Twenty Twenty-Two</em></td>
+                <td>Proudly Powered by <u>WordPress</u></td>
+            </tr>
+        </table><br><br>
+    </footer>
 </body>
-<footer>
-    <table style="width: 200%;">
-        <tr>
-            <td><em>Twenty Twenty-Two</em></td>
-            <td>Proudly Powered by <u>WordPress</u></td>
-        </tr>
-    </table><br><br>
-</footer>
 </html>
